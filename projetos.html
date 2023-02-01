@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta nome="description" content="Criação de websites personalizados!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAV ICON-->
+    <link rel="icon" href="./img/icon.png">
+
+    <!--Animações-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="styles.css">
+     
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Freela Dev - Criação de websites</title>
+</head>
+
+<body>
+
+
+
+    <div id="btn-wpp">
+        <img onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'" src="./img/whatsapp.png" alt="whatsapp">
+    </div>
+
+
+    <div id="container">
+        <div id="start">
+            <header class="w-100 p-3 d-flex justify-content-lg-around justify-content-between">
+                <a href="index.html" class="_brand font-weight-bold align-self-center"><img src="./img/logo3.png" alt="logo"> FREELA <span>DEV</span></a>
+                <nav  id="nav-desktop">
+                    <ul class="nav _links">
+                        <li class="nav-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="_pag-active"  href="projetos.html">PROJETOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html">CONTATO</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+                
+
+                <!--BTN CHAMA NAV MOBILE-->
+                <div id="btn-mobile">
+                    <label for="checkbox" class="toggler">
+                        <input onclick="btnMobile()" type="checkbox" name="" id="checkbox">
+                        <span class="line line--top"></span>
+                        <span class="line line--middle"></span>
+                        <span class="line line--bottom"></span>
+                    </label>
+                </div>
+                <!--BTN CHAMA NAV MOBILE-->
+
+
+                <!--NAV MOBILE-->
+                <div id="nav-mobile">
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a class="active-menu-mobile" href="projetos.html">PROJETOS</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">CONTATO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--NAV MOBILE-->
+
+            </header>
+
+
+
+            <main class="container-fluid mt-2 pt-2">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10 text-center">
+
+                               
+                         <div data-aos="fade-right" id="btns-projetos">
+                              <span id="one" onclick="selectPage('one')" class="active-projetos">One page</span>
+                                      /
+                              <span id="multi" onclick="selectPage('multi')">Multi pages</span>
+                         </div>
+
+
+                         <div data-aos="fade-left" id="container-projetos-one">
+                               <div id="gifs-one-page">
+                                     <div class="container-gifs"> <img src="./img/finans.jpg" alt="finans"> </div>
+                                     <div class="container-gifs"> <img src="./img/finans.jpg" alt="finans"> </div>
+                               </div>
+                         </div>
+
+                         <div data-aos="fade-left" id="container-projetos-multi" class="hidee">
+                               <div id="gifs-multi-page">
+                                    <div class="container-gifs"> <img src="./img/finans.jpg" alt="finans"> </div>
+                                    <div class="container-gifs"> <img src="./img/finans.jpg" alt="finans"> </div>
+                               </div>
+                         </div>
+
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+   
+
+   
+   <section data-aos="fade-right" id="quem-somos">
+        <h1 data-aos="fade-right">Oferecemos soluções personalizadas para sua empresa, seja em formato de website one page ou multipage. A qualidade deve ser combinada com um bom preço, Fale conosco!</h1>
+
+        <button onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'">Solicite um orçamento</button>
+   </section>
+
+
+
+   <section data-aos="fade-left" id="instagram">
+          <iframe class='d-none d-lg-block mx-auto' src="https://snapwidget.com/embed/1023398" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:525px; height:350px"></iframe>
+          <iframe class='d-block d-lg-none mx-auto' src="https://snapwidget.com/embed/1023621" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:315px; height:210px"></iframe>
+          <p><a href="https://www.instagram.com/freeladev/">Ver mais</a></p>
+   </section>
+
+
+
+
+    <footer id="footer">
+      <div class="contianer">
+          <div class="row">
+                <div class="col-5">
+                    <a id="logo-footer" href="#"><img src="./img/logo3.png" alt="logo"> Freela <span>Dev</span></a>
+                </div>
+                <div id="txt-footer" class="col align-self-center">
+                       Copyright © 2023 Weslei Casali
+                </div>
+          </div>
+      </div>
+    </footer>
+
+  
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    
+        
+    <!--JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
