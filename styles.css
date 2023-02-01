@@ -199,7 +199,7 @@ header{
 }
 
 .test{
-      
+    letter-spacing: 0;
 }
 
 #nav-mobile nav ul{
@@ -765,13 +765,14 @@ header{
 #title-contato{
         color: var(--cor1);
         letter-spacing: -1px;
-        font-size: 30px;
+        margin-top: 30px;
+        font-size: 35px;
 }
 
 
 #links-contato{
       text-align: center;
-      padding-left: 130px;
+      padding-left: 160px;
       padding-top: 30px;
 }
 
@@ -781,7 +782,7 @@ header{
 
 #links-contato .contatos i{
        color: var(--cor1);
-       font-size: 20px;
+       font-size: 25px;
 }
 
 #links-contato .contatos i:hover{
@@ -794,7 +795,7 @@ header{
 
 #links-contato .contatos #icones-contato i{
       margin: 5px;
-      font-size: 25px;
+      font-size: 30px;
       cursor: pointer;
 }
 
@@ -811,26 +812,27 @@ header{
 }
 
 #form-contato input, textarea{
-       padding: 5px;
+       padding: 10px;
        margin-bottom: 8px;
-       width: 70%;
+       width: 80%;
        border-radius: 5px;
-       font-size: 12px;
+       font-size: 14px;
        border: none;
 }
 
 #form-contato textarea{
-      font-size: 12px;
+      font-size: 14px;
 }
 
 #form-contato button{
-      width: 30%;
+      width: 35%;
       margin-top: 10px;
       background-color: var(--cor1);
       border: none;
       color: white;
       border-radius: 5px;
       transition: 400ms;
+      padding: 5px 15px;
 }
 
 #form-contato button:hover{
