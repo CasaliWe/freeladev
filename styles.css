@@ -140,6 +140,7 @@ background-color: rgba(255, 68, 0, 0.212);
 header{
       background-image: url('./img/bkg.jpg');
       background-position: right center;
+      overflow: hidden;
 }
 
 ._brand{
@@ -286,6 +287,7 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 }
 
 #info-main h1{
@@ -366,6 +368,7 @@ header{
 #orcamento{
       height: 20vh;
       color: white;
+      overflow: hidden;
 }
 
 #container-orcamento{
@@ -376,6 +379,7 @@ header{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        overflow: hidden;
 }
 
 #container-orcamento div h1{
@@ -424,6 +428,7 @@ header{
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      overflow: hidden;
 }
 
 #exemplos #anima-txt{
@@ -544,6 +549,7 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 }
 
 #quem-somos h1{
@@ -585,6 +591,7 @@ header{
 #instagram{
         text-align: center;
         padding: 20px 0px 10px 0px;
+        overflow: hidden;
 }
 
 #instagram a{
