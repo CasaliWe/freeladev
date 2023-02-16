@@ -85,10 +85,11 @@ background-color: rgba(255, 68, 0, 0.212);
 /*BTN WPP*/
 #btn-wpp{
       position: fixed;
-      right: 20px;
+      right: 30px;
       bottom: 20px;
       width: 60px;
       height: 60px;
+      z-index: 100000;
  }
  
  #btn-wpp img{
@@ -101,6 +102,7 @@ background-color: rgba(255, 68, 0, 0.212);
        opacity: .5;
        transition: 300ms;
  }
+ /*BTN WPP*/
 
 
 
@@ -110,7 +112,7 @@ background-color: rgba(255, 68, 0, 0.212);
 
 
 #container{
-      height: 100vh;
+      height: auto;
       overflow: hidden;
       background-image: url("./img/bkg-port.jpg");
       background-size: cover;
@@ -122,6 +124,7 @@ background-color: rgba(255, 68, 0, 0.212);
 
 #start{
       height: 100%;
+      padding-bottom: 50px;
       background-color: rgba(0, 0, 0, 0.753);
       color: white;
       display: flex;
@@ -156,146 +159,11 @@ header{
       color: var(--cor1);
 }
 
-._links li a{
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin: 0px 10px;
-      transition: 500ms;
-}
-
-._links li a:hover{
-      color: rgba(255, 255, 255, 0.575);
-      transition: 500ms;
-}
-
-._pag-active{
-     padding: 0px 2px 2px 2px;
-     border-bottom: 2px solid var(--cor1);
-}
-
 ._brand img{
       width: 35px;
       margin-top: -6px;
       margin-right: -6px;
 }
-
-
-
-/*NAV MOBILE*/
-#nav-mobile{
-        position: fixed;
-        top: 0;
-        width: 0%;
-        height: 100vh;
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        background-color: black;
-}
-
-.test{
-    letter-spacing: 0;
-}
-
-#nav-mobile nav ul{
-      list-style: none;
-      text-align: center;
-}
-
-#nav-mobile nav ul li{
-      margin-bottom: 30px;
-}
-
-#nav-mobile nav ul li a{
-     color: white;
-     font-size: 30px;
-     transition: 400ms;
-}
-
-#nav-mobile nav ul li a:hover{
-      color: rgba(255, 68, 0, 0.486);
-      cursor: pointer;
-      text-decoration: none;
-      transition: 400ms;
- }
-
-.active-menu-mobile{
-        padding: 2px 12px;
-        border-left: 2px solid var(--cor1);
-        border-right: 2px solid var(--cor1);
-        border-radius: 5px;
-}
-
-
-/*btn close open mobile menu*/
-#btn-mobile{
-        display: none;
-}
-/*btn close open mobile menu*/
-
-
-#checkbox {
-      display: none;
-}
-  
-.toggler {
-      position: relative;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 120000;
-}
-  
-.line {
-      position: absolute;
-      width: 21px;
-      height: 2px;
-      background-color: white;
-      border-radius: 3px;
-      transition: transform .25s, opacity .35s;
-}
-  
-.line--top {
-      transform: translateY(-7px);
-}
-  
-.line--bottom {
-      transform:translateY(7px);
-}
-  
-#checkbox:checked~.line--top{
-      transform: rotate(45deg);
-      background-color: var(--cor1);
-}
-  
-#checkbox:checked~.line--bottom{
-      transform: rotate(-45deg);
-      background-color: var(--cor1);
-}
-  
-#checkbox:checked~.line--middle{
-      transform: translateX(16px);
-      background-color: var(--cor1);
-      opacity: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -309,9 +177,19 @@ header{
 ._carousel-item1 h1{
       color: var(--cor1);
       width: 50%;
-      font-size: 30px;
+      font-size: 50px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+}
+
+@media (max-width:1400px){
+      ._carousel-item1 h1{
+            color: var(--cor1);
+            width: 60%;
+            font-size: 40px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+      }
 }
 
 ._carousel-item1 p{
@@ -352,15 +230,25 @@ header{
 ._carousel-item2 h1{
       color: var(--cor1);
       width: 50%;
-      font-size: 30px;
+      font-size: 50px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+}
+
+@media (max-width:1400px){
+      ._carousel-item2 h1{
+            color: var(--cor1);
+            width: 50%;
+            font-size: 40px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+      }  
 }
 
 ._carousel-item2 p{
       width: 40%;
       margin: 0 auto;
-      margin-bottom: 65px;
+      margin-bottom: 25px;
       font-size: 20px;
 }
 
@@ -381,6 +269,10 @@ header{
       cursor: pointer;
       transition: 400ms;
 }
+/*CAROUSEL*/
+
+
+
 
 
 
@@ -459,12 +351,18 @@ header{
        font-size: 13px;
        margin-bottom: 10px;
 }
+/*INFO MAIN*/
 
 
 
 
 
-/*Sessão orçamento*/
+
+
+
+
+
+/*POSICIONAR*/
 #orcamento{
       height: 20vh;
       color: white;
@@ -511,6 +409,7 @@ header{
          from{transform: scale(1);}
          to{transform: scale(1.1);}
 }
+/*POSICIONAR*/
 
 
 
@@ -518,7 +417,7 @@ header{
 
 
 
-/*Exemplos*/
+/*PROJETOS EXEMPLOS*/
 #exemplos{
       padding: 40px;
       display: flex;
@@ -589,22 +488,6 @@ header{
 }
 
 
-#btn-projetos{
-        background-color: var(--cor1);
-        border: none;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 3px;
-        transition: 400ms;
-}
-
-#btn-projetos:hover{
-      background-color: rgba(255, 0, 0, 0.582);
-      cursor: pointer;
-      transition: 400ms;
-}
-
-
 .descri-exemplos1{
          width: 50%;
          padding: 20px;
@@ -643,6 +526,7 @@ header{
        transition: 400ms;
        cursor: pointer;
 }
+/*PROJETOS EXEMPLOS*/
 
 
 
@@ -691,11 +575,7 @@ header{
           from{transform: scale(1);}
           to{transform: scale(1.1);}
 }
-
-
-
-
-
+/*Quem Somos*/
 
 
 
@@ -717,6 +597,109 @@ header{
       transition: 400ms;
       color: var(--cor1);
 }
+/*INSTAGRAM*/
+
+
+
+
+
+
+
+/*PÁGINA DE CONTATO*/
+#form-container{
+     background-image: url('img/bkg-port.jpg');
+     background-position: center center;
+     background-size: cover;
+     color: white;
+     overflow: hidden;
+}
+
+#form-bg-dark{
+        background-color: rgba(0, 0, 0, 0.671);
+}
+
+
+#title-contato{
+      color: var(--cor1);
+      letter-spacing: -1px;
+      margin-top: 20px;
+      font-size: 35px;
+}
+
+
+#links-contato{
+    text-align: center;
+    padding-left: 160px;
+    padding-top: 30px;
+}
+
+#links-contato .contatos{
+    text-align: start;
+}
+
+#links-contato .contatos i{
+     color: var(--cor1);
+     font-size: 25px;
+}
+
+#links-contato .contatos i:hover{
+    color: var(--cor2);
+}
+
+#links-contato .contatos #icones-contato{
+      padding-left: 50px;
+}
+
+#links-contato .contatos #icones-contato i{
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#form-contato{
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+#form-contato input, textarea{
+     padding: 10px;
+     margin-bottom: 8px;
+     width: 80%;
+     border-radius: 5px;
+     font-size: 14px;
+     border: none;
+}
+
+#form-contato textarea{
+    font-size: 14px;
+}
+
+#form-contato button{
+    width: 35%;
+    margin-top: 10px;
+    background-color: var(--cor1);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 400ms;
+    padding: 5px 15px;
+}
+
+#form-contato button:hover{
+    transition: 400ms;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.568);
+}
+/*PÁGINA DE CONTATO*/
+
+
 
 
 
@@ -752,158 +735,7 @@ header{
         font-size: 13px;
         color: rgba(255, 255, 255, 0.555);  
 }
-
-
-
-
-
-
-
-
-
-/*---------------------------PÁGINA DE CONTATO---------------------------*/
-#title-contato{
-        color: var(--cor1);
-        letter-spacing: -1px;
-        margin-top: 30px;
-        font-size: 35px;
-}
-
-
-#links-contato{
-      text-align: center;
-      padding-left: 160px;
-      padding-top: 30px;
-}
-
-#links-contato .contatos{
-      text-align: start;
-}
-
-#links-contato .contatos i{
-       color: var(--cor1);
-       font-size: 25px;
-}
-
-#links-contato .contatos i:hover{
-      color: var(--cor2);
-}
-
-#links-contato .contatos #icones-contato{
-        padding-left: 50px;
-}
-
-#links-contato .contatos #icones-contato i{
-      margin: 5px;
-      font-size: 30px;
-      cursor: pointer;
-}
-
-
-
-
-
-
-
-#form-contato{
-       padding: 10px;
-       display: flex;
-       flex-direction: column;
-}
-
-#form-contato input, textarea{
-       padding: 10px;
-       margin-bottom: 8px;
-       width: 80%;
-       border-radius: 5px;
-       font-size: 14px;
-       border: none;
-}
-
-#form-contato textarea{
-      font-size: 14px;
-}
-
-#form-contato button{
-      width: 35%;
-      margin-top: 10px;
-      background-color: var(--cor1);
-      border: none;
-      color: white;
-      border-radius: 5px;
-      transition: 400ms;
-      padding: 5px 15px;
-}
-
-#form-contato button:hover{
-      transition: 400ms;
-      cursor: pointer;
-      background-color: rgba(255, 0, 0, 0.568);
-}
-
-
-
-
-
-/*------------------------PROJETOS-------------------------*/
-#btns-projetos span{
-      background-color: transparent;
-      border: none;
-      color: white;
-      transition: 400ms;
-}
-
-#btns-projetos span:hover{
-        cursor: pointer;
-        color: rgba(255, 68, 0, 0.486);
-        transition: 400ms;
-}
-
-#btns-projetos span.active-projetos{
-      color: var(--cor1);
-}
-
-
-#container-projetos{
-         margin-top: 30px;
-         padding: 20px;
-}
-
-
-.hidee{
-      display: none;
-}
-
-
-
-/*PROJETOS GIFS*/
-#container-projetos-one, #container-projetos-multi{
-         margin-top: 30px;
-         padding: 15px;
-}
-
-#gifs-one-page, #gifs-multi-page{
-         margin: 0 auto;
-         width: 700px;
-         height: 400px;
-         padding: 15px;
-         overflow-y: scroll;
-}
-
-#gifs-one-page .container-gifs, #gifs-multi-page .container-gifs{
-      height: 100%;
-      width: 100%;
-      margin-bottom: 10px;
-}
-
-#gifs-one-page .container-gifs img, #gifs-multi-page .container-gifs img{
-      width: 100%;
-      border-radius: 10px;
-}
-/*PROJETOS GIFS*/
-
-
-
+/*FOOTER*/
 
 
 
@@ -915,7 +747,7 @@ header{
 /*BTN WPP*/
 #btn-wpp{
       position: fixed;
-      right: 20px;
+      right: 25px;
       bottom: 20px;
       width: 40px;
       z-index: 2000000;
@@ -934,21 +766,6 @@ header{
 }
 /*BTN WPP*/
 
-
-
-
-
-
-/*NAV DESK E MOBILE*/
-#btn-mobile{
-    display: block;
-}
-
-#nav-desktop{
-      display: none;
-}
-/*NAV DESK E MOBILE*/
-      
 
 
 
@@ -1186,37 +1003,7 @@ header{
 
 
 
-
-
-/*FOOTER*/
-#footer{
-       padding: 20px;
-}
-
-#logo-footer{
-     display: none;
-}
-#txt-footer{
-       position: absolute;
-       text-align: center;
-}
-/*FOOTER*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------PÁGINA DE CONTATO---------------------------*/
+/*PÁGINA DE CONTATO*/
 #container #start{
       overflow-y: auto;
 }
@@ -1269,27 +1056,31 @@ header{
     margin-top: 20px;
     padding: 10px 15px;
 }
+/*PÁGINA DE CONTATO*/
 
 
 
 
 
-/*------------------------PROJETOS-------------------------*/
-/*PROJETOS GIFS*/
-#container-projetos-one, #container-projetos-multi{
-       margin-top: 30px;
-       padding: 15px;
+
+
+/*FOOTER*/
+#footer{
+       padding: 20px;
 }
 
-#gifs-one-page, #gifs-multi-page{
-       margin: 20px auto;
-       width: 100%;
-       height: auto;
-       padding: 0px;
+#logo-footer{
+     display: none;
 }
+#txt-footer{
+       position: absolute;
+       text-align: center;
+}
+/*FOOTER*/
 
-#gifs-one-page .container-gifs, #gifs-multi-page .container-gifs{
-    margin-bottom: 40px;
-}
-/*PROJETOS GIFS*/
+
+
+
+
+
 }

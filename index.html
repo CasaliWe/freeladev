@@ -30,62 +30,20 @@
 
 <body>
 
-
+    <!--BTN WPP-->
     <div id="btn-wpp">
         <img onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'" src="./img/whatsapp.png" alt="whatsapp">
     </div>
+    <!--BTN WPP-->
 
-
+   
+    
     <div id="container">
         <div data-aos="fade-right" id="start">
-            <header class="w-100 p-3 d-flex justify-content-lg-around justify-content-between">
+
+            <header class="w-100 p-3 d-flex justify-content-lg-around justify-content-center">
+
                 <a href="index.html" class="_brand font-weight-bold align-self-center"><img src="./img/logo3.png" alt="logo"> FREELA <span>DEV</span></a>
-                <nav id="nav-desktop">
-                    <ul class="nav _links">
-                        <li class="nav-item">
-                            <a class="_pag-active" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="projetos.html">PROJETOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contato.html">CONTATO</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-
-
-                <!--BTN CHAMA NAV MOBILE-->
-                    <div id="btn-mobile">
-                        <label for="checkbox" class="toggler">
-                            <input onclick="btnMobile()" type="checkbox" name="" id="checkbox">
-                            <span class="line line--top"></span>
-                            <span class="line line--middle"></span>
-                            <span class="line line--bottom"></span>
-                        </label>
-                    </div>
-                 <!--BTN CHAMA NAV MOBILE-->
-
-
-                <!--NAV MOBILE-->
-                <div id="nav-mobile">
-
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="active-menu-mobile" href="index.html">HOME</a>
-                            </li>
-                            <li>
-                                <a href="projetos.html">PROJETOS</a>
-                            </li>
-                            <li>
-                                <a href="contato.html">CONTATO</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!--NAV MOBILE-->
 
             </header>
 
@@ -105,9 +63,10 @@
 
                                     <p>Bem-vindo ao Freela Dev, sua empresa de criação de websites em Passo Fundo. Temos uma variedade de opções para atender às suas necessidades online. Oferecemos criação de:</p>
 
-                                    <h5>Landing pages | Sites empresariais | One page | Mini sites | Portfólio</h5>
+                                    <h5 class="d-none d-lg-block">Landing pages | Sites empresariais | One page | Mini sites | Portfólio</h5>
+                                    <h5 class="d-block d-lg-none">Landing page | Portfólio | Site empresarial</h5>
 
-                                    <button onclick="window.location.href='projetos.html'"><i class="fas fa-info-circle"></i> SAIBA MAIS</button>
+                                    <button onclick="window.location.href='#exemplos'"><i class="fas fa-info-circle"></i> SAIBA MAIS</button>
                                 </div>
                                 
                                 <div class="carousel-item _carousel-item2">
@@ -134,10 +93,15 @@
                     </div>
                 </div>
             </main>
+
+
         </div>
     </div>
    
 
+
+
+   <!--INFO MAIN-->
    <section id="info-main">
             <h1 data-aos="fade-right">Como Vamos Transformar o Seu Negócio?</h1>
 
@@ -184,9 +148,12 @@
            
             </div>
    </section>
+   <!--INFO MAIN-->
 
 
 
+
+   <!--POSICIONAR-->
    <section id="orcamento">
          <div data-aos="fade-right" id="container-orcamento">
                 <div>
@@ -197,16 +164,18 @@
                 <button onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'"> <i class="fab fa-whatsapp"></i> WHATSAPP</button>
          </div>
    </section>
+    <!--POSICIONAR-->
 
 
 
 
+
+   <!--PROJETOS EXEMPLOS-->
    <section id="exemplos">
 
         <h1 data-aos="fade-left"  id="anima-txt" class="digitar">Negócios Transformados</h1>
 
-        <h5 data-aos="fade-right">Conheça alguns dos últimos projetos desenvolvidos pela nossa equipe.
-            Quer ver outros projetos incríveis como esses? <span style="cursor: pointer;" onclick="window.location.href='projetos.html'">Cique aqui!</span></h5>
+        <h5 data-aos="fade-right">Conheça alguns dos últimos projetos desenvolvidos</h5>
 
         <div id="carousell" class="container-fluid mt-5">
              <div class="row">
@@ -231,46 +200,104 @@
                     </div>
                     <img src="./img/finans.jpg" alt="finans" class="shadow-lg border rounded">
                 </div>
-
-                <div class="col-12 mt-5 text-center">
-                    <button id="btn-projetos" onclick="window.location.href='projetos.html'">Veja mais projetos</button>
-                </div>
              </div>
         </div>
 
    </section>
+   <!--PROJETOS EXEMPLOS-->
 
 
    
+
+
+   <!--QUEM SOMOS-->
    <section id="quem-somos">
         <h1 data-aos="fade-right">Oferecemos soluções personalizadas para sua empresa, seja em formato de website one page ou multipage. A qualidade deve ser combinada com um bom preço, Fale conosco!</h1>
 
         <button data-aos="fade-left" onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'">Solicite um orçamento</button>
    </section>
+   <!--QUEM SOMOS-->
 
 
 
+
+
+   <!--INSTAGRAM-->
    <section data-aos="fade-right" id="instagram">
           <iframe class='d-none d-lg-block mx-auto' src="https://snapwidget.com/embed/1023398" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:525px; height:350px"></iframe>
           <iframe class='d-block d-lg-none mx-auto' src="https://snapwidget.com/embed/1023621" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:315px; height:210px"></iframe>
           <p><a href="https://www.instagram.com/freeladev/">Ver mais</a></p>
    </section>
+   <!--INSTAGRAM-->
 
 
 
 
+
+
+    <!--FORMULÁRIO DE CONTATO-->
+    <main class="container-fluid" id="form-container">
+    <div class="row py-3" id="form-bg-dark">
+        <div class="offset-lg-1 col-lg-10 text-center">
+
+            <h1 data-aos="fade-down" id="title-contato">Entre em contato</h1>
+
+            <div class="row pt-3">
+                <div data-aos="fade-right" class="col-12 col-lg-6" id="links-contato">
+                        <div class="contatos">
+                            <p><i class="fas fa-id-card"></i> NOME: Weslei Casali</p>
+                            <p><i class="fas fa-city"></i> CIDADE: Passo Fundo-RS</p>
+                            <p><i class="fas fa-envelope"></i> EMAIL: wesleicasali@freeladev.online</p>
+                            
+                        <div id="icones-contato">
+                            <i onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'" class="fab fa-whatsapp"></i>
+                            <i onclick="window.location.href='https://www.instagram.com/freeladev/'" class="fab fa-instagram"></i>
+                            <i onclick="window.location.href='https://www.linkedin.com/in/weslei-casali-575826237/'" class="fab fa-linkedin"></i>
+                        </div>
+                        </div>
+                </div>
+                
+                <div data-aos="fade-left" class="col-12 col-lg-6">
+                    <form action="https://api.staticforms.xyz/submit" method="POST" id="form-contato">
+
+                        <input type="hidden" name="accessKey" value="d4cc1d42-5488-4b43-b66c-ad1f64b20861">
+
+                            <input type="text" name="name" placeholder="Nome">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <input type="number" name="phone" placeholder="Celular / Whatsapp">
+                            <textarea name="" name="message" id="" cols="30" rows="3" placeholder="Mensagem"></textarea>
+
+                            <button type="submit">Enviar</button>
+
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                    </form>
+                </div>
+            </div>
+                
+
+        </div>
+    </div>
+    </main>
+    <!--FORMULÁRIO DE CONTATO-->
+
+
+
+
+ 
+   <!--FOOTER-->
    <footer id="footer">
           <div class="contianer">
                 <div class="row">
                       <div class="col-5">
                           <a id="logo-footer" href="#"><img src="./img/logo3.png" alt="logo"> Freela <span>Dev</span></a>
                       </div>
-                      <div id="txt-footer" class="col align-self-center">
+                      <div id="txt-footer" class="col col-md-2 text-center align-self-center">
                              Copyright © 2023 Weslei Casali
                       </div>
                 </div>
           </div>
    </footer>
+   <!--FOOTER-->
 
   
 
