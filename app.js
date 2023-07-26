@@ -15,6 +15,17 @@ const phoneMask = (value) => {
 
 
 
+//-----------------FAZER CONTAGEM DE VISITA---------------
+async function contagemVisita(){
+    const response = await fetch("https://freeladev.online/salvarContagem")
+    const data = await response.json()
+}
+contagemVisita();
+
+
+
+
+
 
 
 //------------REMOVER LOADER O MOSTRAR CONTENT APÓS INSERIR TODOS OS DADOS------------------
