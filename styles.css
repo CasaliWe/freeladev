@@ -78,6 +78,27 @@ background-color: rgba(255, 68, 0, 0.212);
 
 
 
+/*LOADER*/
+#loader div{
+    height: 30px;
+    width: 30px;
+    animation: animaLoader 600ms infinite;
+}
+#loader div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@keyframes animaLoader {
+      from{transform: scale(1.0); opacity: .7;}
+      to{transform: scale(1.3); opacity: 1;}
+}
+/*LOADER*/
+
+
 
 
 
@@ -112,15 +133,19 @@ background-color: rgba(255, 68, 0, 0.212);
 
 
 #container{
-      height: auto;
       overflow: hidden;
       background-image: url("./img/bkg-port.jpg");
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      height: 100vh;
 }
-
+@media(min-width:1700px){
+      #container{
+            height: 60vh;
+      }
+}
 
 #start{
       height: 100%;
@@ -717,30 +742,11 @@ header{
 #footer{
        background-image: url('./img/bkg.jpg');
        background-position: right center;
-       padding: 10px;
+       padding: 30px;
        color: white;
-       padding-bottom: 5px;
-       overflow: hidden;
-}
-
-#logo-footer{
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-}
-
-#logo-footer img{
-      width: 30px;
-}
-
-#logo-footer span{
-     color: var(--cor1);
-}
-
-
-#txt-footer{
-        font-size: 13px;
-        color: rgba(255, 255, 255, 0.555);  
+       display: flex;
+       justify-content: center;
+       align-items: center;
 }
 /*FOOTER*/
 
