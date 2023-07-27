@@ -71,7 +71,7 @@
 
         <!--BTN WPP-->
         <div id="btn-wpp">
-            <img src="./img/whatsapp.png" alt="whatsapp">
+            <a href="" id="link-btn-wpp-float"><img src="./img/whatsapp.png" alt="whatsapp"></a>
         </div>
         <!--BTN WPP-->
     
@@ -121,7 +121,7 @@
                                         <p>Além de oferecer designs atraentes e funcionalidade moderna, todos os nossos sites são desenvolvidos com as últimas tecnologias, garantindo que eles sejam responsivos e se adaptem perfeitamente a todos os tamanhos de tela, desde desktops até dispositivos móveis. Faça um orçamento: </p>
     
     
-                                        <button> <i class="fab fa-whatsapp"></i> WHATSAPP</button>
+                                        <button id="btn-ir-para-wpp"> <i class="fab fa-whatsapp"></i> WHATSAPP</button>
                                     </div>
     
                                 </div>
@@ -214,7 +214,7 @@
                         <h5 class="d-block d-lg-none">Clique no botão abaixo!</h5>
                     </div>
     
-                    <button> <i class="fab fa-whatsapp"></i> WHATSAPP</button>
+                    <button id="btn-wpp-posicionar"> <i class="fab fa-whatsapp"></i> WHATSAPP</button>
              </div>
        </section>
         <!--POSICIONAR-->
@@ -233,50 +233,10 @@
             <h5 data-aos="fade-down">Conheça alguns dos últimos projetos desenvolvidos</h5>
     
             <div id="carousell" class="container-fluid mt-5">
-                 <div class="row">
-                    <div data-aos="fade-down" class="col-12 d-flex flex-column flex-lg-row justify-content-around mb-5">
-                        <img src="./img/funi.jpg" alt="Exemplo Banda Neural" class="shadow-lg border rounded">
-                        <div class="descri-exemplos1">
-                              <h3>Site Onepage</h3>
-    
-                              <p>Site criado para Funilaria Ribeiro, com painel de administrador, design 100% personalizado, responsivo, com animações, entre outras funcionalidades!</p>
-    
-                              <button onclick="window.location.href='https://funilariaribeiro.website/'">Ver site</button>
-                        </div>
-                    </div>
-    
-                    <div data-aos="fade-down" class="col-12 d-flex flex-column flex-lg-row justify-content-around mb-5">
-                        <div class="descri-exemplos2">
-                              <h3>Site Multipage</h3>
-    
-                              <p>Site criado para banda Neural, design 100% personalizado, responsivo, com animações, painel de administrador, entre outras funcionalidades!</p>
-    
-                              <button onclick="window.location.href='https://bandaneural.site/'">Ver site</button>
-                        </div>
-                        <img src="./img/neural.png" alt="Exemplo Banda Neural" class="shadow-lg border rounded">
-                    </div>
-    
-                    <div data-aos="fade-down" class="col-12 d-flex flex-column flex-lg-row justify-content-around mb-5">
-                        <img src="./img/MeuPortProSite.png" alt="Exemplo portfólio" class="shadow-lg border rounded">
-                        <div class="descri-exemplos1">
-                              <h3>Portfólio</h3>
-    
-                              <p>Criado para exibição de projetos, design 100% personalizado, responsivo e com animações!</p>
-    
-                              <button onclick="window.location.href='https://casaliportfolio.netlify.app/'">Ver site</button>
-                        </div>
-                    </div>
-    
-                    <div data-aos="fade-up" class="col-12 d-flex flex-column flex-lg-row justify-content-around mb-5">
-                        <div class="descri-exemplos2">
-                            <h3>Portfólio</h3>
-    
-                            <p>Responsivo, com animações e funcionalidade de escolha de temas, feito para exibição de designs!</p>
-    
-                            <button onclick="window.location.href='https://emanueladarosaportfolio.netlify.app/'">Ver site</button>
-                        </div>
-                        <img src="./img/PortAmorProSite.png" alt="Exemplo portfólio" class="shadow-lg border rounded">
-                    </div>
+                 <div class="row" id="container-projetos">
+                    
+                      <!--PROJETOS NO JS-->
+
                  </div>
             </div>
     
@@ -293,7 +253,7 @@
     
             <h1 data-aos="fade-down">Oferecemos soluções personalizadas para sua empresa, seja em formato de website one page ou multipage. A qualidade deve ser combinada com um bom preço, Fale conosco!</h1>
     
-            <button data-aos="fade-down" onclick="window.location.href='https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20site!'">Solicite um orçamento</button>
+            <button data-aos="fade-down" id="btn-solicite-orcamento">Solicite um orçamento</button>
        </section>
        <!--QUEM SOMOS-->
     
@@ -307,7 +267,7 @@
     
               <iframe class='d-none d-lg-block mx-auto' src="https://snapwidget.com/embed/1025399" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:525px; height:350px"></iframe>
               <iframe class='d-block d-lg-none mx-auto' src="https://snapwidget.com/embed/1025400" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:315px; height:210px"></iframe>
-              <p><a href="https://www.instagram.com/freeladev/">Ver mais</a></p>
+              <p><a href="" id="btn-ver-insta">Ver mais</a></p>
        </section>
        <!--INSTAGRAM-->
     
@@ -326,13 +286,13 @@
                 <div class="row pt-3">
                     <div data-aos="fade-up" class="col-12 col-lg-6" id="links-contato">
                             <div class="contatos">
-                                <p><i class="fas fa-city"></i> CIDADE:  ???? - ??</p>
-                                <p><i class="fas fa-envelope"></i> EMAIL: ????@gmail.com</p>
+                                <p><i class="fas fa-city me-5"></i> <span id="cidade-contato"></span> - <span id="estado-contato"></span></p>
+                                <p><i class="fas fa-envelope me-5"></i> <a class="text-white text-decoration-none" href="" id="email-contato"></a></p>
     
                             <div id="icones-contato">
-                                <i class="fab fa-whatsapp"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <a href="" id="whatsapp-contato"><i class="fab fa-whatsapp"></i></a>
+                                <a href="" id="instagram-contato"><i class="fab fa-instagram"></i></a>
+                                <a href="" id="linkedin-contato"><i class="fab fa-linkedin"></i></a>
                             </div>
                             </div>
                     </div>
