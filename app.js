@@ -55,6 +55,7 @@ async function inserirDados(){
     document.getElementById("whatsapp-contato").href = whatsappContato
     document.getElementById("instagram-contato").href = infos.instagram
     document.getElementById("linkedin-contato").href = infos.linkedin 
+    document.getElementById("facebook-contato").href = infos.facebook
 
 
     const resProjetos = await fetch(`${baseUrl}/api/projetos`)
