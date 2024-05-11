@@ -1,4 +1,4 @@
-const baseUrl = 'https://compartilhamente.online'
+const baseUrl = 'https://back.freeladev.site'
 
 
 
